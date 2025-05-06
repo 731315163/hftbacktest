@@ -32,7 +32,6 @@ fn prepare_live() -> LiveBot<IceoryxUnifiedChannel, HashMapMarketDepth> {
 
 fn main() {
     tracing_subscriber::fmt::init();
-
     let mut hbt = prepare_live();
 
     let relative_half_spread = 0.0005;
