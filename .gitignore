@@ -9,5 +9,8 @@ docs/_build
 **/target
 **/tmp_*
 **/*.so
+**/*.pyd
+py-hftbacktest/uv.lock
+
 examples/uv.lock
 examples/pyproject.toml
