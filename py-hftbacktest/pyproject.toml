@@ -30,19 +30,19 @@ classifiers = [
   "Topic :: Scientific/Engineering",
   "Topic :: Office/Business :: Financial :: Investment"
 ]
+dependencies =[
+  "numpy >=2.0, <2.3","numba ~= 0.61","polars","matplotlib"]
+
 
 [project.urls]
 Repository = "https://github.com/nkaz001/hftbacktest"
 
-[project.dependencies]
-numpy = ["numpy >=2.0, <2.3"]
-numba = ["numba ~= 0.61"]
-polars = ["polars"]
-matplotlib = ["matplotlib"]
+
 
 [project.optional-dependencies]
 holoviews = ["holoviews"]
 databento = ["databento"]
+dev = ["maturin~=1.7"]
 
 [tool.maturin]
 include = [{ path = "rust-toolchain.toml", format = "sdist" }]
