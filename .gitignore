@@ -9,3 +9,5 @@ docs/_build
 **/target
 **/tmp_*
 **/*.so
+examples/uv.lock
+examples/pyproject.toml
